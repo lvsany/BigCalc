@@ -51,8 +51,8 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
 })(({ theme }) => ({
-  backgroundColor: '#f5f5f5', // 修改为浅色背景
-  color: '#333333', // 设置文字颜色为深色
+  backgroundColor: '#1565C0', // 修改为深蓝色
+  color: '#FFFFFF', // 设置文字颜色为浅色
   transition: theme.transitions.create(['margin', 'width'], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -111,7 +111,8 @@ export default function PersistentDrawerLeft() {
             The BigCock
           </Typography>
           <Box sx={{ ml: 'auto' }}>
-            <Button onClick={() => navigate('/sign-in')}>Back to Sign-In Page</Button>
+            <Button onClick={() => navigate('/sign-in')} color="inherit">Back to Sign-In Page
+            </Button>
 
             {/* <IconButton
               color="inherit"
